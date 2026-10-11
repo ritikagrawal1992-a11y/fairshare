@@ -1,0 +1,9 @@
+services:
+  workbench:
+    build: .
+    ports:
+      - "127.0.0.1:4312:4312"
+    volumes:
+      - workbench-data:/app/data
+volumes:
+  workbench-data:
